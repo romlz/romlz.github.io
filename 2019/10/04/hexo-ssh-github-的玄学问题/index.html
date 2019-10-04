@@ -79,18 +79,21 @@
 
 
 
-<meta name="description" content="hexo d 的上传问题在我把我的文章以及hexo的主题配置好了之后，在本地运行毫无问题，但是在使用hexo d指令的时候却遇到了令我无法解决的蜜汁BUG  我的hexo和github是使用ssh的，这样的好处是每次上传不需要用户密码验证，但是问题就出在这里1Connection reset by 52.74.223.119 port 22  ##网上解决方法参考 方法一（不可行）：一开始，我一看">
+<meta name="description" content="hexo d 的上传问题在我把我的文章以及hexo的主题配置好了之后，在本地运行毫无问题，但是在使用hexo d指令的时候却遇到了令我无法解决的蜜汁BUG我的hexo和github是使用ssh的，这样的好处是每次上传不需要用户密码验证，但是问题就出在这里 1Connection reset by 52.74.223.119 port 22">
 <meta name="keywords" content="hexo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo ssh github 的玄学问题">
 <meta property="og:url" content="http://yoursite.com/2019/10/04/hexo-ssh-github-的玄学问题/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="hexo d 的上传问题在我把我的文章以及hexo的主题配置好了之后，在本地运行毫无问题，但是在使用hexo d指令的时候却遇到了令我无法解决的蜜汁BUG  我的hexo和github是使用ssh的，这样的好处是每次上传不需要用户密码验证，但是问题就出在这里1Connection reset by 52.74.223.119 port 22  ##网上解决方法参考 方法一（不可行）：一开始，我一看">
+<meta property="og:description" content="hexo d 的上传问题在我把我的文章以及hexo的主题配置好了之后，在本地运行毫无问题，但是在使用hexo d指令的时候却遇到了令我无法解决的蜜汁BUG我的hexo和github是使用ssh的，这样的好处是每次上传不需要用户密码验证，但是问题就出在这里 1Connection reset by 52.74.223.119 port 22">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-10-04T06:15:32.689Z">
+<meta property="og:image" content="http://yoursite.com/.com//1.jpg">
+<meta property="og:image" content="http://yoursite.com/.com//2.jpg">
+<meta property="og:updated_time" content="2019-10-04T07:53:32.074Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo ssh github 的玄学问题">
-<meta name="twitter:description" content="hexo d 的上传问题在我把我的文章以及hexo的主题配置好了之后，在本地运行毫无问题，但是在使用hexo d指令的时候却遇到了令我无法解决的蜜汁BUG  我的hexo和github是使用ssh的，这样的好处是每次上传不需要用户密码验证，但是问题就出在这里1Connection reset by 52.74.223.119 port 22  ##网上解决方法参考 方法一（不可行）：一开始，我一看">
+<meta name="twitter:description" content="hexo d 的上传问题在我把我的文章以及hexo的主题配置好了之后，在本地运行毫无问题，但是在使用hexo d指令的时候却遇到了令我无法解决的蜜汁BUG我的hexo和github是使用ssh的，这样的好处是每次上传不需要用户密码验证，但是问题就出在这里 1Connection reset by 52.74.223.119 port 22">
+<meta name="twitter:image" content="http://yoursite.com/.com//1.jpg">
 
 
 
@@ -300,38 +303,24 @@
       
 
       
-        <h1 id="hexo-d-的上传问题"><a href="#hexo-d-的上传问题" class="headerlink" title="hexo d 的上传问题"></a>hexo d 的上传问题</h1><pre><code>在我把我的文章以及hexo的主题配置好了之后，在本地运行毫无问题，但是在使用hexo d指令的时候却遇到了令我无法解决的蜜汁BUG
+        <h1 id="hexo-d-的上传问题"><a href="#hexo-d-的上传问题" class="headerlink" title="hexo d 的上传问题"></a>hexo d 的上传问题</h1><p>在我把我的文章以及hexo的主题配置好了之后，在本地运行毫无问题，但是在使用hexo d指令的时候却遇到了令我无法解决的蜜汁BUG<br>我的hexo和github是使用ssh的，这样的好处是每次上传不需要用户密码验证，但是问题就出在这里</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Connection reset by 52.74.223.119 port 22</span><br></pre></td></tr></table></figure>
 
-我的hexo和github是使用ssh的，这样的好处是每次上传不需要用户密码验证，但是问题就出在这里</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Connection reset by 52.74.223.119 port 22</span><br></pre></td></tr></table></figure>
-
-<p>##<a href="https://stackoverflow.com/questions/35558649/github-error-ssh-connect-to-host-github-com-port-22-operation-timed-out-fat" target="_blank" rel="noopener">网上解决方法参考</a></p>
-<h2 id="方法一（不可行）："><a href="#方法一（不可行）：" class="headerlink" title="方法一（不可行）："></a>方法一（不可行）：</h2><pre><code>一开始，我一看是22端口问题，小意思，直接百度一下，把22端口开启了
-但是开启了之后还是不行，依旧报错。
-[百度结果](https://www.cnblogs.com/Diamond-sjh/p/11352156.html)</code></pre><h2 id="方法二（不可行）"><a href="#方法二（不可行）" class="headerlink" title="方法二（不可行）:"></a>方法二（不可行）:</h2><pre><code>找到git/etc/ssh/ssh_config
-增加以下内容</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">	Host github.com</span><br><span class="line">	  Hostname ssh.github.com</span><br><span class="line">	  Port 443</span><br><span class="line">```	 </span><br><span class="line"> </span><br><span class="line">## 方法三(可行)：</span><br><span class="line">	将ssh方式改成https方式，在博客所在文件夹中找到_config.yml</span><br><span class="line">	对以下内容进行修改：</span><br></pre></td></tr></table></figure>
-
-<pre><code>deploy:
-  type: git
-  repo: https://github.com/romlz/romlz.github.io.git
-  branch: master</code></pre><pre><code>    弊端：
-     在此后的每次hexo d的时候，需要手动输入github账户的账号密码，有点麻烦！！
+<a id="more"></a>
+<h2 id="网上解决方法参考"><a href="#网上解决方法参考" class="headerlink" title="网上解决方法参考"></a><a href="https://stackoverflow.com/questions/35558649/github-error-ssh-connect-to-host-github-com-port-22-operation-timed-out-fat" target="_blank" rel="noopener">网上解决方法参考</a></h2><h2 id="方法一（不可行）："><a href="#方法一（不可行）：" class="headerlink" title="方法一（不可行）："></a>方法一（不可行）：</h2><p>一开始，我一看是22端口问题，小意思，直接百度一下，把22端口开启了<br>但是开启了之后还是不行，依旧报错。<br><a href="https://www.cnblogs.com/Diamond-sjh/p/11352156.html" target="_blank" rel="noopener">百度结果</a></p>
+<h2 id="方法二（不可行）"><a href="#方法二（不可行）" class="headerlink" title="方法二（不可行）:"></a>方法二（不可行）:</h2><p>找到git/etc/ssh/ssh_config<br>增加以下内容</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Host github.com</span><br><span class="line">Hostname ssh.github.com</span><br><span class="line">Port 443</span><br></pre></td></tr></table></figure>
 
 
-# 终极解决方案
-[网络问题，用自己手机无线网作为热点即可](https://blog.csdn.net/zj57356498318/article/details/100513450)
-在兜兜转转之后，我无意中发现这一篇文章，随即试了一下，还真可以了！！
-![](hexo-ssh-github-的玄学问题_files/1.jpg)
-但是.....
-![](hexo-ssh-github-的玄学问题_files/2.jpg)
-连接超时......
-但是还是不明白为何如此.... 真是玄学啊！！
 
-#总结
-最后还是不能通过ssh上传，只能用方法三来上传了。
-难受...
+<h2 id="方法三（可行）："><a href="#方法三（可行）：" class="headerlink" title="方法三（可行）："></a>方法三（可行）：</h2><p>将ssh方式改成https方式，在博客所在文件夹中找到_config.yml<br>对以下内容进行修改：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https://github.com/romlz/romlz.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
 
 
-</code></pre>
+<p>弊端：<br>在此后的每次hexo d的时候，需要手动输入github账户的账号密码，有点麻烦！！</p>
+<h1 id="终极解决方案"><a href="#终极解决方案" class="headerlink" title="终极解决方案"></a>终极解决方案</h1><p><a href="https://blog.csdn.net/zj57356498318/article/details/100513450" target="_blank" rel="noopener">网络问题，用自己手机无线网作为热点即可</a><br>在兜兜转转之后，我无意中发现这一篇文章，随即试了一下，还真可以了！！<br><img src="/.com//1.jpg" alt><br>但是…..<br><img src="/.com//2.jpg" alt><br>连接超时……<br>但是还是不明白为何如此…. 真是玄学啊！！</p>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>最后还是不能通过ssh上传，只能用方法三来上传了。<br>难受…</p>
+
       
     </div>
     
@@ -492,7 +481,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#hexo-d-的上传问题"><span class="nav-number">1.</span> <span class="nav-text">hexo d 的上传问题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#方法一（不可行）："><span class="nav-number">1.1.</span> <span class="nav-text">方法一（不可行）：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#方法二（不可行）"><span class="nav-number">1.2.</span> <span class="nav-text">方法二（不可行）:</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#hexo-d-的上传问题"><span class="nav-number">1.</span> <span class="nav-text">hexo d 的上传问题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#网上解决方法参考"><span class="nav-number">1.1.</span> <span class="nav-text">网上解决方法参考</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#方法一（不可行）："><span class="nav-number">1.2.</span> <span class="nav-text">方法一（不可行）：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#方法二（不可行）"><span class="nav-number">1.3.</span> <span class="nav-text">方法二（不可行）:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#方法三（可行）："><span class="nav-number">1.4.</span> <span class="nav-text">方法三（可行）：</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#终极解决方案"><span class="nav-number">2.</span> <span class="nav-text">终极解决方案</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#总结"><span class="nav-number">3.</span> <span class="nav-text">总结</span></a></li></ol></div>
             
 
           </div>
